@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TicTacToe.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <Label Text="Select difficulty level:" HorizontalOptions="Center" FontSize="30"/>
+            <StackLayout HorizontalOptions="Center">
+                <RadioButton x:Name="easyRadioButton" Content="Easy" GroupName="difficultyLevel" IsChecked="True" />
+                <RadioButton x:Name="mediumRadioButton" Content="Medium" GroupName="difficultyLevel" />
+                <RadioButton x:Name="hardRadioButton" Content="Hard" GroupName="difficultyLevel" />
+            </StackLayout>
+            <Button
+                x:Name="StartBtn"
+                Text="Start"
+                Clicked="StartBtn_Clicked"
+                HorizontalOptions="Center"
+                FontSize="25"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
